@@ -5,12 +5,11 @@ namespace Tyuiu.MedvedevDP.Sprint1.Task3.V10.Lib
     {
         public string NumberToMoney(double number)
         {
-            number = Math.Round(number,3);
-
             int rub = (int)number;
             double kopeek = (int)((number - rub) * 100);
+            string sum = $"{rub}.{(number - rub)*10}";
 
-            return $"{number} руб. - это {rub} руб. {kopeek} коп.";
+            return $"{sum} руб. - это {rub} руб. {kopeek} коп.";
         }
     }
 }
