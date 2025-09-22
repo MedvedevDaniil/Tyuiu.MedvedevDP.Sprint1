@@ -9,11 +9,11 @@ namespace Tyuiu.MedvedevDP.Sprint1.Task3.V10.Test
         {
             DataService dataService = new DataService();
 
-            var x = 2.2;
+            var x = 30.5;
 
             var res = dataService.NumberToMoney(x);
 
-            Assert.AreEqual("2 рублей 2 копеек", res);
+            Assert.AreEqual("30.5 руб. - это 30 руб. 50 коп.", res);
         }
     }
 }

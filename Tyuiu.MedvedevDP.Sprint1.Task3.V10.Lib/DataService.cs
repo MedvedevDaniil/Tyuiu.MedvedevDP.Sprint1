@@ -8,9 +8,9 @@ namespace Tyuiu.MedvedevDP.Sprint1.Task3.V10.Lib
             number = Math.Round(number,3);
 
             int rub = (int)number;
-            double kopeek = (int)((number - rub) * 10);
+            double kopeek = (int)((number - rub) * 100);
 
-            return $"{rub} рублей {kopeek} копеек";
+            return $"{number} руб. - это {rub} руб. {kopeek} коп.";
         }
     }
 }
